@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balatrade Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #202124;
+        }
+        /* Top Search Bar Style */
+        .search-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid #dfe1e5;
+            box-shadow: 0 1px 6px rgba(32,33,36,0.1);
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 650px;
+            background: #fff;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 8px 16px;
+            margin: 0 auto;
+        }
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        /* Search Result Container */
+        .result-container {
+            max-width: 650px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+        .result-url-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .result-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+            border: 1px solid #dfe1e5;
+        }
+        .result-meta .site-name {
+            font-size: 14px;
+            color: #202124;
+            display: block;
+        }
+        .result-meta .site-url {
+            font-size: 12px;
+            color: #4d5156;
+        }
+        .result-title {
+            font-size: 20px;
+            color: #1a0dab;
+            text-decoration: none;
+            font-weight: 400;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .result-title:hover {
+            text-decoration: underline;
+        }
+        .result-desc {
+            font-size: 14px;
+            line-height: 1.58;
+            color: #4d5156;
+            margin-bottom: 15px;
+        }
+        /* App Install Section Box */
+        .app-install-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f8f9fa;
+            border: 1px solid #dfe1e5;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-top: 15px;
+        }
+        .app-info {
+            display: flex;
+            align-items: center;
+        }
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+        .app-details h4 {
+            margin: 0 0 4px 0;
+            font-size: 16px;
+            color: #202124;
+        }
+        .app-details p {
+            margin: 0;
+            font-size: 12px;
+            color: #5f6368;
+        }
+        .install-btn {
+            background-color: #1a73e8;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+        }
+        .install-btn:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- सर्चिङ हेडर बार -->
+    <div class="search-header">
+        <div class="search-bar">
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="#9aa0a6" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input type="text" value="balatrade" readonly>
+        </div>
+    </div>
+
+    <!-- मुख्य सर्च रिजल्ट कन्टेनर -->
+    <div class="result-container">
+        
+        <!-- साइटको लोगो र लिङ्क विवरण -->
+        <div class="result-url-block">
+            <img src="balatrade.jpg" alt="Balatrade Logo" class="result-logo">
+            <div class="result-meta">
+                <span class="site-name">Balatrade</span>
+                <span class="site-url">https://balamahara4-stack.github.io/Balatrade/</span>
+            </div>
+        </div>
+
+        <!-- क्लिक गर्दा मुख्य वेबसाइटको लिङ्क खुल्ने शिर्षक -->
+        <a href="https://balamahara4-stack.github.io/Balatrade/" target="_blank" class="result-title">
+            Balatrade - Official Trading Platform & Web App
+        </a>
+
+        <!-- बालाट्रेड बारेमा विवरण -->
+        <div class="result-desc">
+            Explore Balatrade for advanced digital tools, market tracking, and seamless trading features. Access the official web platform or download our Android application for a better experience.
+        </div>
+
+        <!-- ठीक तल एप इन्स्टल गर्ने अप्सन (App Install Section) -->
+        <div class="app-install-box">
+            <div class="app-info">
+                <img src="balatrade.jpg" alt="App Icon" class="app-icon">
+                <div class="app-details">
+                    <h4>Balatrade App</h4>
+                    <p>Tools & Trading • APK</p>
+                </div>
+            </div>
+            <!-- क्लिक गर्दा एप डाउनलोड/इन्स्टल हुने बटन -->
+            <a href="Balatrade.apk" class="install-btn" download>Install</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
